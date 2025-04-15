@@ -1,0 +1,27 @@
+# filter_name = request.GET.get('filter[name]')
+        # filter_min_price = request.GET.get('filter[minPrice]')
+        # filter_max_price = request.GET.get('filter[maxPrice]')
+        # filter_free_delivery = request.GET.get('filter[freeDelivery]').capitalize()
+        # filter_available = request.GET.get('filter[available]').capitalize()
+        # if filter_available == 'True':
+        #     filter_available = 0
+        # sort = request.GET.get('sort')
+        # sort_type = request.GET.get('sortType')
+        # if sort_type == 'dec':
+        #     sort_type = '-'
+        # else:
+        #     sort_type = ''
+        # filter_sort = ''.join(sort_type + sort)
+        # limit = int(request.GET.get('limit'))
+        # if filter_name:
+        #     products = Product.objects.filter(title=filter_name,
+        #                                       price__gte=filter_min_price,
+        #                                       price__lte=filter_max_price,
+        #                                       freeDelivery=filter_free_delivery,
+        #                                       count__gte=filter_available
+        #                                       ).order_by(filter_sort).all()
+        # else:
+        #     products = Product.objects.filter(price__gte=filter_min_price,
+        #                                       price__lte=filter_max_price,
+        #                                       freeDelivery=filter_free_delivery,
+        #                                       ).order_by(filter_sort).all()
