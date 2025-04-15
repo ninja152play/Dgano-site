@@ -20,7 +20,7 @@ MEGANO — сайт магазина, основанный на фреймвор
 ======
 
 ```
-docker run -p 8000:8000 django-app
+docker run -d -p 8000:8000 --restart unless-stopped django-app
 ```
 
 Документация
@@ -29,8 +29,14 @@ docker run -p 8000:8000 django-app
 
 Создание админа
 ```
+docker ps -a # сопируем CONTAINER ID
+
+docker exec -it CONTAINER ID /bin/bash
+
 cd megano
 
 python manage.py createsuperuser
+
+exit
 ```
 Доступ в админ-панель по ссылке http://server_ip:8000/admin
