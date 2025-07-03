@@ -7,7 +7,7 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-RUN cd ./diploma-frontend/dist && pip install diploma-frontend-0.6.tar.gz && cd ../..
+RUN cd ./diploma-frontend/dist && pip install diploma_frontend-0.6.tar.gz && cd ../..
 
 RUN python ./megano/manage.py migrate
 
